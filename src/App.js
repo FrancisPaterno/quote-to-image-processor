@@ -53,7 +53,7 @@ function App() {
         </Card>
         <FooterHelp>
           GitHub Link:{' '}
-          <Link external url="https://help.shopify.com/manual/orders/fulfill-orders">
+          <Link external url="https://github.com/FrancisPaterno/quote-to-image-processor">
             here
           </Link>
         </FooterHelp>
