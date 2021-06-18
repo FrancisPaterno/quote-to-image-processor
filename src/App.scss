@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+[class^="quote-"] {
+  margin: 10px;
+}
+.quote-text {
+  max-width: 75%;
+}
+#generate-image {
+  display: none;
+}
+
+#image-holder {
+  width: 870px;
+  height: 500px;
+  object-fit: "cover";
+  object-position: "center";
+}
+
+#image-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+#generate-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  max-width: 870px;
+  max-height: 500px;
+  width: 870px;
+  height: 500px;
+  font-family: Lato;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 40px;
+  line-height: 50px;
+}
+.text-content {
+  text-align: center;
+  margin: 100px;
+}
+.footer {
+  clear: both;
+}
