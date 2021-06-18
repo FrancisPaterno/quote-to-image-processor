@@ -37,7 +37,7 @@ function App() {
 
   return (
     <>
-      <Page title="Frame">
+      <Page title="Enter quote and select color">
         <Card sectioned className="Card">
           <div className = "container">
             <div className = "quote-text">
