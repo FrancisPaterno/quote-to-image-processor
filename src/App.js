@@ -31,9 +31,10 @@ function App() {
     })
   }
 
-  useEffect(()=>{
+  const handleColorChange = (color)=>{
+    setColor(color)
     generateImage()
-  })
+  }
 
   return (
     <>
@@ -41,10 +42,10 @@ function App() {
         <Card sectioned className="Card">
           <div className = "container">
             <div className = "quote-text">
-              <QouteTextField value = {txtValue} handleChange = {handleTxtChange}/>
+              <QouteTextField value = {txtValue} handleChange = {handleTxtChange} handleOnBlur = {generateImage}/>
             </div>
             <div className = "quote-color">
-              <ColorPicker allowAlpha color = {color} onChange={setColor}/>
+              <ColorPicker allowAlpha color = {color} onChange={handleColorChange}/>
             </div>
             <div className = "quote-image">
               <ImageComponent color = {color} textValue = {txtValue}/>
