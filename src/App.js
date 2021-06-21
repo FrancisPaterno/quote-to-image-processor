@@ -1,7 +1,7 @@
 import '@shopify/polaris/dist/styles.css'
 import './App.scss'
 import ImageComponent from './components/ImageComponent'
-import { useState, useEffect } from 'react'
+import { useState} from 'react'
 import { ColorPicker, Page, Card, FooterHelp, Link } from '@shopify/polaris';
 import * as htmlToImage from 'html-to-image';
 import QouteTextField from './components/QouteTextField';
