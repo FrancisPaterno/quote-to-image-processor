@@ -9,7 +9,7 @@ function ImageComponent({color, textValue}) {
                 <div className="text-content">{textValue}</div>
             </div>
             <span><strong>Your image here : </strong></span>
-            <img id = "image-holder" alt="Qoute" loading="lazy"/>
+            <img id = "image-holder" alt="Qoute"/>
         </div>
     )
 }
