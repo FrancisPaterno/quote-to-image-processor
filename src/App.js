@@ -13,14 +13,17 @@ function App() {
     saturation: 0.7,
     alpha: 0.7
   });
+
   const [txtValue, setTxtValue] = useState('Your quote')
   const handleTxtChange = (newValue => setTxtValue(newValue))
 
   const generateImage = async()=>{
+    console.log('ColorGen', color)
     let node = document.getElementById("generate-image")
     const fontEmbedCss = await htmlToImage.getWebFontEmbedCss(node)
     node.style.display = "flex"
-    htmlToImage.toPng(node, {fontEmbedCss})
+
+    htmlToImage.toPng(node, {fontEmbedCss, width:1000, height:500})
     .then(function(dataUrl){
       let img = document.getElementById('image-holder')
       img.src = dataUrl
@@ -45,7 +48,7 @@ function App() {
               <QouteTextField value = {txtValue} handleChange = {handleTxtChange} handleOnBlur = {generateImage}/>
             </div>
             <div className = "quote-color">
-              <ColorPicker allowAlpha color = {color} onChange={handleColorChange}/>
+              <ColorPicker allowAlpha color = {color} onChange={handleColorChange} />
             </div>
             <div className = "quote-image">
               <ImageComponent color = {color} textValue = {txtValue}/>

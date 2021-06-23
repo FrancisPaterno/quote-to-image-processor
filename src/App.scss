@@ -9,9 +9,6 @@
 .quote-text {
   max-width: 75%;
 }
-#generate-image {
-  display: none;
-}
 
 #image-holder {
   width: 870px;
@@ -26,12 +23,10 @@
 }
 
 #generate-image {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   background-color: black;
-  max-width: 870px;
-  max-height: 500px;
   width: 870px;
   height: 500px;
   font-family: Lato;
@@ -43,7 +38,4 @@
 .text-content {
   text-align: center;
   margin: 100px;
-}
-.footer {
-  clear: both;
 }
